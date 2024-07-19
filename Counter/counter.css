@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 4rem;
+}
+.incDecBtnAndCounterContainer {
+  display: flex;
+  gap: 3rem;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 1rem;
+}
+
+.btn-floating {
+  position: static;
+}
+
+.count {
+  display: flex;
+  justify-content: center;
+  min-width: 4rem;
+  font-size: 3rem;
+}
+
+.containerForIncDecBy {
+  display: flex;
+  align-items: center;
+  border: solid red;
+  font-size: 2rem;
+}
+
+.input-to-inc-dec-value-by {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.btn-reset {
+  width: 20rem;
+}

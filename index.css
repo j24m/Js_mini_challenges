@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  margin: 2rem;
+  flex-wrap: wrap;
+}
+
+.challenge {
+  color: var(--green-shade-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  height: 10rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--gray-shade-color);
+  font-size: 2.5rem;
+}
+
+.challenge:hover {
+  transition: 0.2s;
+  transform: scale(1.01);
+  box-shadow: 0 3px 8px var(--gray-shade-color);
+}
