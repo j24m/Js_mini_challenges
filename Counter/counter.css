@@ -31,8 +31,12 @@
 
 .containerForIncDecBy {
   display: flex;
+  justify-content: center;
   align-items: center;
   font-size: 2rem;
+  gap: 1rem;
+  min-width: 50%;
+  padding: 1rem;
 }
 
 .input-to-inc-dec-value-by {
@@ -42,4 +46,10 @@
 
 .btn-reset {
   width: 20rem;
+}
+
+@media screen and (max-width: 555px) {
+  .containerForIncDecBy {
+    flex-direction: column;
+  }
 }
