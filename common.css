@@ -5,6 +5,10 @@
   width: 100%;
 }
 
+.mg-top {
+  margin: 10rem 0;
+}
+
 @media screen and (max-width: 900px) {
   .navbar .brand {
     font-size: 3rem;

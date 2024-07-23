@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.main-container > h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.input {
+  min-width: 15%;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.btn {
+  width: 12rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 20%;
+  gap: 1rem;
+}
+
+.btn-start-game:disabled,
+.btn-submit:disabled {
+  cursor: not-allowed;
+  background-color: var(--gray-shade-color);
+}
+
+.guess-result {
+  font-size: 2rem;
+}
+
+.guesses {
+  font-size: 2rem;
+}
