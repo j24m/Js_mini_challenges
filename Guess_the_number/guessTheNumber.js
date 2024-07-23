@@ -33,7 +33,7 @@ function guessHandler() {
     return;
   }
   guessArray.push(userGuess);
-  if (guessArray.length === 6) {
+  if (guessArray.length === 10) {
     guessResult.textContent = `You lost! The number was ${randomNumber}.`;
     BtnSubmit.disabled = true;
     BtnStartGame.disabled = false;
