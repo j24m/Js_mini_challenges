@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Js mini challenges</title>
+    <title>String Transformers</title>
     <link rel="stylesheet" href="https://basicui.netlify.app/components.css" />
-    <link rel="stylesheet" href="./common.css" />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./stringTransformer.css" />
+    <link rel="stylesheet" href="/common.css" />
   </head>
   <body>
     <header class="navbar">
       <div>
-        <a class="brand" href="#">Frontend Mini Challenges</a>
+        <a class="brand" href="/index.html">Frontend Mini Challenges</a>
       </div>
       <a
         class="githublink-container"
@@ -33,15 +33,39 @@
       </a>
     </header>
     <main class="main-container mg-top">
-      <a href="./Counter/counter.html">
-        <h1 class="challenge">Counter</h1>
-      </a>
-      <a href="./Guess_the_number/guessTheNumber.html">
-        <h1 class="challenge">Guess the number</h1>
-      </a>
-      <a href="./String_transformers/stringTransformer.html">
-        <h1 class="challenge">String Transformers</h1>
-      </a>
+      <input
+        class="input"
+        placeholder="enter the sentence with spaces(alphanumeric)"
+      />
+      <div class="case">
+        <label>Lower Case</label>
+        <span id="lowercase"></span>
+      </div>
+      <div class="case">
+        <label>Upper Case</label>
+        <span id="uppercase"></span>
+      </div>
+      <div class="case">
+        <label>Camel Case</label>
+        <span id="camelcase"></span>
+      </div>
+      <div class="case">
+        <label>Pascal Case</label>
+        <span id="pascalcase"></span>
+      </div>
+      <div class="case">
+        <label>Snake Case</label>
+        <span id="snakecase"></span>
+      </div>
+      <div class="case">
+        <label>Kebab Case</label>
+        <span id="kebabcase"></span>
+      </div>
+      <div class="case">
+        <label>Trim</label>
+        <span id="trim"></span>
+      </div>
     </main>
+    <script src="./stringTransformer.js"></script>
   </body>
 </html>
