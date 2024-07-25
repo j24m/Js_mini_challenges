@@ -12,6 +12,7 @@ guesses.textContent = `Guesses :`;
 
 BtnSubmit.addEventListener("click", guessHandler);
 function guessHandler() {
+  userInput.focus();
   let userGuess = Number(userInput.value);
   console.log("randomNumber", randomNumber);
   console.log("userGuess", userGuess);
@@ -29,6 +30,7 @@ function guessHandler() {
     guessResult.textContent = "Congrats! you guessed it right.";
     guessResult.style.color = "green";
     BtnSubmit.disabled = true;
+    userInput.disabled = true;
     BtnStartGame.disabled = false;
     return;
   }
